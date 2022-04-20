@@ -1,0 +1,25 @@
+.need-help {
+    text-align: center;
+}
+
+.need-help h3{
+    font-size: calc(var(--second-title-size) + 5px);
+    margin-bottom: 10px;
+}
+
+.need-help h1{
+    margin-top: 0px;
+    color: var(--main-color);
+    font-size: var(--title-size);
+}
+
+.article-7 section > p{
+    margin: 8%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-us-container{
+    display: flex;
+    justify-content: center;
+}

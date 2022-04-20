@@ -1,0 +1,120 @@
+.article-6{
+    width: 100%;
+}
+
+.reviews{
+    font-size: var(--title-size);
+}
+
+.reviews span{
+    color: var(--main-color);
+}
+
+.speaker-global-container{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.speaker-container{
+    display: flex;
+    min-height: 400px;
+    width: 100%;
+    margin: 100px 0;
+    flex-shrink: 0;
+}
+
+.speaker-testimony{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.speaker-testimony p{
+    font-weight: lighter;
+    line-height: 40px;
+    font-size: 23px;
+}
+
+.speaker-testimony img{
+    width: 40px;
+}
+
+.speaker-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-image-container img{
+    width: 70%;
+}
+
+.speaker-container>div:nth-child(1){
+    width: 40%;
+}
+
+.speaker-container>div:nth-child(2){
+    width: 60%;
+}
+
+.speaker-testimony-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+    width: 100%;
+}
+
+.speaker-testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.speaker-identity p{
+    line-height: 10px;
+}
+
+.speaker-name{
+    font-size: 25px;
+}
+
+.speaker-work{
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.article-6 > section:nth-child(2){
+    position: relative;
+}
+
+.speaker-carousel-controls{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+}
+
+.speaker-carousel-controls>div:nth-child(1){
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-carousel-controls>div:nth-child(2){
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.speaker-carousel-controls .slots{
+    margin-left: -150px;
+}
+
+.speaker-carousel-controls .chevron{
+    color: white;
+}

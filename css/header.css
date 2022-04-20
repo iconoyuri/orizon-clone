@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #2b00d4;
+    --title-size: 55px;
+    --second-title-size: 25px;
+    --smaller-size: 18px;
+    --special-paragraphs-padding: 70px;
+    --buttons-height: 60px;
+    --border-color: rgba(62, 65, 75, 0.39);
+    --slots-color: rgb(109, 109, 109);
+
+    color: #160f31;
+}
+
+h1 {
+    line-height: 70px;
+}
+
+.cursor-follower {
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+    --size: 7px;
+    --gapLeft: 12px;
+    --gapTop: 4px;
+    pointer-events: none;
+    position: fixed;
+    background-color: var(--main-color) !important;
+    width: var(--size) !important;
+    height: var(--size) !important;
+    border-radius: 50%;
+    transition: opacity 0.3s, width 0.5s, height 0.5s, background-color 0.3s;
+    top: calc(var(--cursorY) - var(--gapTop)) !important;
+    left: calc(var(--cursorX) - var(--gapLeft)) !important;
+}
+
+/* .follower-over{
+    
+} */
+
+.follower-over:hover~.cursor-follower {
+    --size: 50px;
+    --gapLeft: 25px;
+    --gapTop: 25px;
+    width: var(--size);
+    height: var(--size);
+    opacity: 0.3;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-us {
+    padding: 25px 40px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--main-color);
+    height: var(--buttons-height);
+}
+
+.contact-us::before {
+    content: "";
+    height: var(--buttons-height);
+    width: 0px;
+    position: absolute;
+    left: 0px;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-us:hover::before {
+    width: 200px;
+}
+
+.contact-us-head {
+    padding-right: 90px;
+}
+
+body {
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+p,
+div,
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.orizon-logo {
+    width: 150px;
+}
+
+#menu-veil {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.474);
+    z-index: 150;
+    transition: opacity 0.2s;
+}
+
+.menu-button-container {
+    position: fixed;
+    right: 80px;
+    z-index: 250;
+    padding: 7px 8px;
+    transition: background-color 0.5s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.bars-container {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-button-bar1,
+.menu-button-bar2 {
+    width: 70%;
+    height: 3px;
+    background-color: #2b00d4;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.menu-button-bar1 {
+    left: 6px;
+    margin-bottom: -5px;
+}
+
+p[class] {
+    font-weight: lighter;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    right: -50vw;
+    top: 0;
+    width: 50vw;
+    padding-top: 5%;
+    color: #fff;
+    z-index: 200;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right 0.5s;
+    overflow: auto;
+}
+
+.menu-items div {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items p {
+    text-align: center;
+    font-size: 35px;
+    line-height: 65px;
+    margin: 10px;
+    font-weight: lighter;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-items a:hover::before {
+    width: 100%;
+}
+.menu-items a::before {
+    content: "";
+    height: 50px;
+    width: 0px;
+    position: absolute;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.164);
+}
+.menu-items a {
+    color: rgb(141, 141, 141);
+}
+
+.nav-second-part > p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 14%;
+    font-size: 20px;
+}
+
+.button-right-arrow {
+    background-color: white;
+    display: flex;
+    width: 240px;
+    height: var(--buttons-height);
+    border: solid 1px black;
+}
+
+.button-right-arrow > div:nth-child(1) {
+    border-right: solid 1px rgba(0, 0, 0, 0.521);
+}
+
+.button-right-arrow div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.button-right-arrow p {
+    text-align: center;
+}
+
+.button-right-arrow div:nth-child(1) {
+    width: 75%;
+    font-size: 13px;
+}
+
+.button-right-arrow div:nth-child(2) {
+    width: 30%;
+}
+
+.button-right-arrow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-right-arrow:hover::before {
+    width: 240px;
+}
+
+.button-right-arrow::before {
+    content: "";
+    height: 60px;
+    width: 0px;
+    position: absolute;
+    transition: width 0.2s;
+    background-color: rgba(56, 56, 56, 0.164);
+}
+
+.our-contacts {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 10%;
+}
+
+.our-contacts-container {
+    display: flex;
+    justify-content: center;
+}
+
+.head-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    text-align: center;
+    /* margin-top: -50px; */
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.violet-right-arrow {
+    border: solid 1px var(--border-color);
+}
+
+.violet-right-arrow > div:nth-child(1) {
+    border-right: solid 1px var(--border-color);
+}
+
+.not-hidden {
+    opacity: 1;
+    transition: opacity 1s, top 1s;
+    position: relative;
+    top: 0;
+}
+
+.hidden {
+    opacity: 0;
+    top: 30px;
+}

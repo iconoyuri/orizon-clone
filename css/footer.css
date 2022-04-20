@@ -1,0 +1,17 @@
+footer{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div{
+    width: 50%;
+}
+
+.mini-menu{
+    display: flex;
+}
+
+.mini-menu p{
+    margin: 20px;
+}

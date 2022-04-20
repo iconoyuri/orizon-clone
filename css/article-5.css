@@ -1,0 +1,263 @@
+.article-5 {
+    background-color: rgb(14, 0, 51);
+    padding: 0;
+}
+
+.article-5 section {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.why-orizon h1 {
+    font-size: 80px;
+    color: white;
+    margin-left: 100px;
+}
+
+.why-orizon h1 span {
+    color: rgb(105, 100, 131);
+}
+
+.why-orizon img {
+    width: 75%;
+}
+
+.why-orizon > div {
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.some-description-container {
+    overflow: hidden;
+}
+
+.tapis {
+    transition: transform 0.5s;
+}
+
+.some-description-container .tapis {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 7%;
+}
+
+.some-description {
+    width: 650px;
+    margin-right: 200px;
+    color: white;
+}
+
+.some-description > div {
+    display: flex;
+    font-size: 31px;
+    margin-bottom: 50px;
+}
+
+.some-description p {
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.some-description img {
+    margin-right: 60px;
+}
+
+.controls {
+    color: white;
+    padding: 7%;
+    display: flex;
+}
+
+.controls > div {
+    width: 50%;
+}
+
+.arrow-buttons {
+    display: flex;
+    font-size: 20px;
+    width: 130px;
+    height: 65px;
+    position: relative;
+}
+
+.arrow-buttons div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.chevron:nth-child(1)::after {
+    content: "";
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    left: 0px;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.chevron:nth-child(1):hover::after {
+    width: 50%;
+}
+
+.chevron:nth-child(2)::before {
+    content: "";
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    right: 0px;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.chevron:nth-child(2):hover::before {
+    width: 50%;
+}
+
+.slots {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    width: 220px;
+    margin-left: -80px;
+}
+
+.slots > div > div {
+    width: 28px;
+    height: 2px;
+    background-color: var(--slots-color);
+}
+
+/* .active-slot{
+    background-color: white;
+} */
+/* .article-5{
+    background-color: rgb(14, 0, 51);
+    padding: 0;
+}
+
+.article-5 section{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.why-orizon h1{
+    font-size: 80px;
+    color: white;
+    margin-left: 100px;
+}
+
+.why-orizon h1 span{
+    color: rgb(105, 100, 131);
+}
+
+.why-orizon img{
+    width: 75%;
+}
+
+.why-orizon > div{
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.some-description-container .tapis{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 7%;
+}
+
+.some-description{
+    width: 650px;
+    margin-right: 200px;
+    color: white;
+}
+
+.some-description > div {
+    display: flex;
+    font-size: 31px;
+    margin-bottom: 50px;
+}
+
+.some-description p{
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.some-description img {
+    margin-right: 60px;
+}
+
+.controls{
+    color: white;
+    padding: 7%;
+    display: flex;
+}
+
+.controls > div{
+    width: 50%;
+}
+
+.arrow-buttons{
+    display: flex;
+    font-size: 20px;
+    width: 130px;
+    height: 65px;
+    position: relative;
+}
+
+.arrow-buttons div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.chevron:nth-child(1)::after{
+    content: "";
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    left: 0px;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.chevron:nth-child(1):hover::after{
+    width: 50%;
+}
+
+.chevron:nth-child(2)::before{
+    content: "";
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    right: 0px;
+    transition: width 0.2s;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.chevron:nth-child(2):hover::before{
+    width: 50%;
+}
+
+.slots{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    width: 220px;
+    margin-left: -80px;
+}
+
+.slots div{
+    width: 28px;
+    height: 2px;
+    background-color: rgb(109, 109, 109);
+} */

@@ -1,0 +1,39 @@
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+
+.our-mission-images{
+    position: relative;
+}
+
+.our-mission-images img:nth-child(1){
+    width: 95px;
+}
+
+.our-mission-images img:nth-child(2){
+    width: 300px;
+    position: absolute;
+    left: 130px;
+    top: 20px;
+}
+
+.partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.partners > div{
+    width: 25%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.partners img{
+    height: 90px;
+    width: 100%;
+}

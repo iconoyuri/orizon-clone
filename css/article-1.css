@@ -1,0 +1,146 @@
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 6%;
+    margin: 5% 0;
+}
+
+article > section{
+    margin: 5% 0;
+}
+
+.smaller-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.some-items{
+    height: 50px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.scroller-data{
+    display: none;
+}
+
+.some-items img{
+    height: 25px;
+}
+
+.some-items p{
+    font-size: var(--smaller-size);
+    text-transform: uppercase;
+    transition: opacity 1s;
+}
+
+.we-make-apps{
+    font-size: var(--title-size);
+}
+
+.we-make-apps span{
+    color: var(--main-color);
+}
+
+.showreel-video{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    background-color: rgba(201, 201, 201, 0.507);
+}
+
+.showreel-filler{
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.showreel-video video{
+    width: 70%;
+    z-index: 1000;
+}
+
+.showreel-video-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor:default ;
+}
+
+.showreel-video-content > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.showreel-video-content > div:nth-child(2){
+    z-index: 1000;
+}
+
+.showreel-video:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.showreel-activator:hover::before{
+    width: 230px;
+}
+
+.showreel-activator::before{
+    content: "";
+    height: 80px;
+    width: 0px;
+    position: absolute;
+    transition: width 0.2s;
+    background-color: var(--main-color);
+    opacity: 0.1;
+}
+
+.showreel-activator{
+    width: 230px;
+    height: 80px;
+    display: flex;
+    box-shadow: 80px 30px 100px rgba(0, 0, 0, 0.08);
+}
+
+.showreel-activator video{
+    height: 100%;
+}
+
+.showreel-activator div:nth-child(1){
+    overflow: hidden;
+    width: 35%;
+}
+
+.showreel-activator div:nth-child(2){
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showreel-activator div:nth-child(2) p{
+    text-align: center;
+}
+
+.left-paragraph{
+    font-size: var(--second-title-size);
+    padding-left: var(--special-paragraphs-padding);
+    border-left: solid 3px var(--main-color);
+    width: 70%;
+}
